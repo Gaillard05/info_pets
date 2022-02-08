@@ -1,0 +1,149 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+header{
+    background-color:#9acd32;
+    padding:.5rem;
+    box-shadow:0 0 25px #000;
+}
+.btn{
+    float:right;
+    margin-top:20%;
+    margin-right:5%;
+    background-color:#ADD8E6;
+    color:#000;
+    font-weight:700px;
+    border:none;
+    border-radius:1rem;
+    padding:1.5rem;
+    letter-spacing:.25rem;
+}
+.titre-site,.accueil{
+    margin:0 auto;
+    font-family:Lobster,cursive;
+    color:#4682b4;
+    font-size:8rem;
+    text-align:center;
+}
+.accueil{
+    text-decoration: none;
+}
+.fa-cat,.fa-dog{
+    color:#000;
+}
+.slogan{
+    font-family:'Dancing Script',cursive;
+    text-align:center;
+    font-size:2rem;
+}
+.img-nav{
+    max-height:50%;
+    max-width:50%;
+    display:flex;
+    margin:0 auto
+}
+header .navigation{
+    display:flex;
+    justify-content:space-evenly
+}
+.navigation a{
+    text-align:center;
+    font-family:Lato,sans-serif;
+    font-size:2rem;
+    text-decoration:none;
+ }
+#out{
+    display:flex;
+    flex-direction:column;
+}
+#container{
+    display:flex;
+    flex-grow:1
+}
+main{
+    flex-grow:2;
+    width:75%
+}
+.msg{
+    text-align: center;
+    font-family:'Dancing Script',cursive;
+    font-size:2.5rem;
+    color:#C71585;
+}
+.presentation{
+    text-align:center;
+    font-family:Lobster,cursive;
+    font-size:5rem;
+}
+.fa-paw{
+    margin:10px
+}
+.images{
+    max-height:45%;
+    max-width:45%;
+    display:flex;
+    margin:0 auto;
+ }
+.txt-introduction{
+    font-family:'Dancing Script',cursive;
+    font-size:2.5rem;
+    text-align:center;
+}
+.video video{
+    width:60%;
+    display:flex;
+    margin:0 auto;
+    margin-top:10%;
+    box-shadow:0 0 50px rgba(0,0,0,.2)
+ }
+aside{
+    background-image:url(../img/background_paw.png);
+    background-repeat:repeat;
+    max-width:20%;
+    flex-grow:2;
+    flex-direction:right;
+}
+.informations{
+    text-align:center;
+    font-family:Lobster,cursive;
+    font-size:4rem;
+    height:50px;
+}
+ .rubriques{
+    text-align:center;
+    color:#000;
+    text-decoration:none;
+    font-family:Lobster,cursive;
+    font-size:2rem;
+}
+ .article{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+    text-align:center;
+    padding:.5rem;
+}
+ .pub{
+    margin-top:1000px;
+}
+footer{
+    background-color:#6b8e23;
+    box-shadow:0 0 25px #000
+}
+ .part{
+    display:inline-flex;
+    justify-content:center;
+ }
+.partenaire{
+    text-align:center;
+    font-family:Lobster,cursive;
+    font-size:2rem;
+ }
+.denomination{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+}

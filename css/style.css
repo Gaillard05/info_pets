@@ -1,0 +1,479 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+header{
+    background-color:#9acd32;
+    padding:.5rem;
+    box-shadow:0 0 25px #000;
+}
+.btn{
+    float:right;
+    margin-top:20%;
+    margin-right:5%;
+    background-color:#ADD8E6;
+    color:#000;
+    font-weight:700px;
+    border:none;
+    border-radius:1rem;
+    text-decoration: none;
+    padding:1.5rem;
+    letter-spacing:.25rem;
+}
+.titre-site,.accueil{
+    margin:0 auto;
+    font-family:Lobster,cursive;
+    color:#4682b4;
+    font-size:8rem;
+    text-align:center;
+}
+.msg{
+    font-family:'Dancing Script',cursive;
+    text-align:center;
+    margin:0 auto;
+    margin-top: 1%;
+    max-width: 20%;
+    font-weight: bold;
+    font-size:2rem;
+}
+.accueil{
+    text-decoration: none;
+}
+.fa-cat,.fa-dog{
+    color:#000;
+}
+.slogan{
+    font-family:'Dancing Script',cursive;
+    text-align:center;
+    font-size:2rem;
+}
+.img-nav{
+    max-height:50%;
+    max-width:50%;
+    display:flex;
+    margin:0 auto
+}
+header .navigation{
+    display:flex;
+    justify-content:space-evenly
+}
+.navigation a{
+    text-align:center;
+    font-family:Lato,sans-serif;
+    font-size:2rem;
+    text-decoration:none;
+ }
+#out{
+    display:flex;
+    flex-direction:column;
+}
+#container{
+    display:flex;
+    flex-grow:1
+}
+main{
+    flex-grow:2;
+    width:75%
+}
+.presentation{
+    text-align:center;
+    font-family:Lobster,cursive;
+    font-size:5rem;
+}
+.fa-paw{
+    margin:10px
+}
+.images{
+    max-height:45%;
+    max-width:45%;
+    display:flex;
+    margin:0 auto;
+ }
+.txt-introduction{
+    font-family:'Dancing Script',cursive;
+    font-size:2.5rem;
+    text-align:center;
+}
+.video video{
+    width:60%;
+    display:flex;
+    margin:0 auto;
+    margin-top:1%;
+    margin-bottom:2%;
+    box-shadow:0 0 50px rgba(0,0,0,.2)
+ }
+aside{
+    background-image:url(../img/background_paw.png);
+    background-repeat:repeat;
+    max-width:20%;
+    flex-grow:2;
+    flex-direction:right;
+}
+.menu_news{
+    border:1px solid  rgba(236, 236, 236, 0.329);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 40vw;
+    margin-top:25%;
+}
+.menu_news::-webkit-scrollbar{
+    width: 12px;
+}
+.menu_news::-webkit-scrollbar-track{
+    background-color: rgba(236, 236, 236, 0.329);
+}
+.menu_news::-webkit-scrollbar-thumb{
+    background-color: rgba(17, 155, 63, 0.651);
+}
+.informations, .lien_news{
+    text-align:center;
+    text-decoration: none;
+    font-family:Lobster,cursive;
+    color:#000;
+    font-size:3rem;
+    height:50px;
+}
+.inf,.contenu,.txt,.calendar{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.titre_article{
+    font-size: 2rem;
+    text-decoration: none;
+    font-family:Lobster,cursive;
+    color:#000;
+}
+.modalView, .modalNews{
+    position: fixed;
+    font-family:'Dancing Script',cursive;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalView:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalView > div{
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close{
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover{
+    background-color: #00d9ff;
+}
+.pub,.pb{
+    margin-top: 150px;
+}
+footer{
+    background-color:#6b8e23;
+    box-shadow:0 0 25px #000
+}
+ .part{
+    display:inline-flex;
+    justify-content:center;
+ }
+.partenaire{
+    text-align:center;
+    font-family:Lobster,cursive;
+    font-size:2rem;
+ }
+.denomination{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+}
+/*responsive*/
+
+/*DESTOCK*/
+@media screen and (max-width: 1025px){
+    .titre-site,.accueil{
+        font-size:8rem;
+        margin: 10px;
+    }
+    .btn{
+        max-width: 60px;
+        letter-spacing: normal;
+    }
+    .slogan{
+        font-size: 2rem;
+    }
+    .navigation a:hover{
+        color:#fff;
+    }
+    header .navigation{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .navigation a{
+        font-size: 2rem;
+    }
+    .img-nav{
+        max-width:50%;
+    }
+    .presentation{
+        font-size: 4rem;
+    }
+    .images{
+        max-width:100%;
+        max-height:100%;
+     }
+     .txt-introduction{
+         font-size: 2rem;
+     }
+    .video video{
+        width:90%;
+     }
+    section aside {
+        display: block;
+        padding: 25px;
+    }
+    aside{
+        width: 100%;
+        padding:25px;
+    }
+    .lien_news,.informations{
+        font-size: 3rem;
+    }
+    .titre_article,.txt,.calendar{
+        font-size: 1.5rem;;
+    }
+    .pub{
+        margin:6px;
+        margin-top: 200px;
+    }
+    .pb{
+        width: 100%;
+        height: 100%;
+    }
+    .denomination{
+        text-align:left;
+    }
+    .partenariat{
+        max-width:80%;
+        display: flex;
+        margin: 0 auto;
+     }
+     .part{
+        display: flex;
+        margin: 0 auto;
+     }
+     .img_footer{
+        max-width:30%;
+        display: flex;
+        margin: 0 auto;
+     }
+     .denomination{
+         text-align: center;
+     }
+     
+ }
+/*Tablette*/
+@media screen and (max-width: 768px){
+    .titre-site,.accueil{
+        font-size:6rem;
+        margin: 10px;
+    }
+    .btn{
+        max-width: 60px;
+        margin-top: none;
+        margin-right:none;
+        margin:0 auto;
+        letter-spacing:normal;
+        float: none;
+        display: flex;
+        justify-content: start;
+    }
+    .slogan{
+        font-size: 2rem;
+    }
+    .navigation a:hover{
+        color:#fff;
+    }
+    header .navigation{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .navigation a{
+        font-size: 2rem;
+    }
+    .img-nav{
+        max-width:50%;
+    }
+    .presentation{
+        font-size: 3rem;
+    }
+    .images{
+        max-width:50%;
+        max-height:50%;
+     }
+     .txt-introduction{
+         font-size: 2rem;
+     }
+    .video video{
+        width:90%;
+     }
+    section aside {
+        display: block;
+        padding: 25px;
+    }
+    aside{
+        width: 100%;
+        padding:25px;
+    }
+    .lien_news,.informations{
+        font-size: 2rem;
+    }
+    .titre_article,.txt,.calendar{
+        font-size: 1rem;;
+    }
+    .pub{
+        margin:6px;
+        margin-top: 200px;
+    }
+    .pb{
+        width: 100%;
+        height: 100%;
+    }
+    .denomination{
+        text-align: center;
+    }
+    .part,.partenariat{
+        max-height:80%;
+        max-width:80%;
+        display:flex;
+        margin:0 auto;
+     }
+     .img_footer{
+        max-height:30%;
+        max-width:30%;
+        display:flex;
+        margin:0 auto;
+     }
+ }
+
+/*Portable*/
+@media screen and (max-width: 425px){
+    .titre-site,.accueil{
+        font-size:3.5rem;
+        margin: 10px;
+    }
+    .slogan{
+        font-size: 1.5rem;
+    }
+    .btn{
+        max-width: 60px;
+        margin-top: none;
+        margin-right:none;
+        margin:0 auto;
+        letter-spacing:normal;
+        float: none;
+        display: flex;
+        justify-content: start;
+    }
+    .navigation a:hover{
+        color:#fff;
+    }
+    header .navigation{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .navigation a{
+        font-size: 1.5rem;
+    }
+    .img-nav{
+        max-width:55%;
+    }
+    .presentation{
+        font-size: 2rem;
+    }
+    .images{
+        max-width:100%;
+     }
+     .txt-introduction{
+         font-size: 1.5rem;
+     }
+    .video video{
+        width:90%;
+     }
+    section aside {
+        display: block;
+        padding: 25px;
+    }
+    aside{
+        width: 100%;
+        padding:25px;
+    }
+    .lien_news,.informations{
+        font-size: 2rem;
+    }
+    .titre_article,.txt,.calendar{
+        font-size: 1rem;;
+    }
+    .pub{
+        margin: 0.25px;
+        margin-top: 200px;
+    }
+    .pb{
+        width: 90px;
+    }
+    .denomination{
+        text-align: center;
+    }
+    .partenaire{
+        font-size: 2rem;
+    }
+    .part,.partenariat{
+        max-height:80%;
+        max-width:80%;
+        display:flex;
+        margin:0 auto;
+     }
+     .img_footer{
+        max-height:30%;
+        max-width:30%;
+        display:flex;
+        margin:0 auto;
+     }
+ }

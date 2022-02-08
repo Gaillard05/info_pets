@@ -1,0 +1,53 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+main{
+    margin: 0 auto;
+    display: block;
+}
+.titre-page,.race,h2{
+    text-align: center;
+}
+.titre-page{
+    font-family:'Lobster',cursive;
+    font-size:4rem;
+}
+.race{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+}
+.kitten{
+    max-height:45%;
+    max-width:45%;
+    display:flex;
+    margin:0 auto; 
+}
+.title-right,.title-left{
+    font-family:'Lobster',cursive;
+    font-size:3rem;
+    text-align: right;
+}
+.title-left{
+    text-align: left;
+}
+p{
+    display: block;
+    font-family:'Dancing Script',cursive;
+    font-size:2.5rem;
+}
+section{
+    margin:10%;
+}
+.right{
+    float: right;
+    max-width: 50%;
+}
+.left{
+    float: left;
+    max-width: 50%;
+}

@@ -1,0 +1,48 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+main{
+    margin: 0 auto;
+    display: block;
+}
+h2{
+    text-align: center;
+    font-family:'Lobster',cursive;
+    font-size:4rem;
+}
+h3{
+    text-align: center;
+    font-family:'Lobster',cursive;  
+    font-size: 2rem;
+}
+.parasite,.cycle{
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+}
+.cycle{
+    display: inline-flex;
+}
+p{
+    font-family:'Dancing Script',cursive;
+    font-size: 2rem; 
+}
+table,th,td{
+    border: solid 1px black;
+    border-collapse:collapse ;
+}
+.attention{
+    background-color: #DC143C;
+    font-family:'Dancing Script',cursive;
+    font-size: 2rem;
+}
+.vigilance{
+    background-color: #FF8C00;
+    font-family:'Dancing Script',cursive;
+    font-size: 2rem;
+}

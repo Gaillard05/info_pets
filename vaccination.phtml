@@ -1,0 +1,60 @@
+    <div>
+        <main>
+            <h2><i class="fas fa-paw"></i>Vaccination<i class="fas fa-paw"></i></h2>
+            <img class="img-vac" src="img/vaccin.jpg">
+            <section>
+                <h3 class="description">Utilité du vaccin</h3>
+                <article>
+                    <p>Il sert à limiter les risques de transmission de maladie chez les animaux, ainsi que les zoonoses chez l'homme.</p>
+                    <p>Le vaccin sert à préserver la santé de votre animal</p>
+                </article>
+            </section>
+            <div>
+                <img src="img/calendrier_vaccination.jpg">
+            </div>
+            <div>
+                <section>
+                    <h3 class="description">Protocole de vaccination pour le chat en fonction de son âge</h3>
+                    <article>
+                    <img src="img/calendrier_vac_chat.png">
+                        <p>
+                            La vaccination contre la rage chez le chien et le chat n'est plus obligatoire en France au vu de l'arrêté du 19 juin 2018.
+                        </p>
+                        <p>
+                            Sauf pour les animaux qui voyagent hors de France.
+                        </p>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <img src="img/calendrier_vac_cat.jpg">
+            </div>
+            <form method="POST" action="">
+                <h3 class="titre-form">Renseigner la dernière date de vaccination</h3>
+            <div class="form-group">
+                <h3 class="date-vac">Date</h3>
+                <label for="jours" class="date-vac">jours</label>
+                <select name="jours" class="date">
+                <?php for($jours = 1; $jours<=31; $jours++) :?>
+                        <option value="<?=$jours; ?>" class="date"><?=$jours; ?></option>
+                <?php endfor; ?>
+                </select>
+                <label for="mois" class="date-vac">mois</label>
+                <select name="mois" class="date">
+                <?php for($mois = 1; $mois<=12; $mois++) : ?>
+                    <option value="<?=$mois; ?>" class="date"><?=$mois;?></option>
+                <?php endfor; ?>
+                </select>
+                <label for="annees" class="date-vac">années</label>
+                <select name="annees" class="date">
+                <?php for($annees= date('Y') - 1; $annees<=date('Y') + 5; $annees++) : ?>
+                        <option value="<?=$annees?>"> <?=$annees?> </option>
+                <?php endfor; ?>
+                </select>
+            </div>
+                <button class="valid">Valider</button>
+                <button class="cancel">Annuler</button>
+            </form>
+        </main>
+    </div>
+    

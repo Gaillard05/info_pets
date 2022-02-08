@@ -1,0 +1,34 @@
+Ahtml{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+    text-align: center;
+    background-image: url(../img/background_paw.png);
+}
+.msg_erreur_acces{
+    font-family:'Dancing Script',cursive;
+    font-weight: bold;
+    font-size:2rem;
+    color:#FF4500;
+}
+.navig { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a{
+    font-family:Lato,sans-serif;
+    font-size:1.5rem;
+    margin:5px;
+    text-decoration:none;
+    color:#696969;
+}
+.inscrip:hover{
+    color:#000080;
+}
+.connex:hover{
+    color:#8B008B;
+}

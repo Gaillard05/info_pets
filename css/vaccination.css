@@ -1,0 +1,51 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+main{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+h2{
+    font-family:'Lobster',cursive;
+    font-size:4rem;
+}
+.img-vac{
+    max-height:45%;
+    max-width:45%;
+    display:flex;
+    margin:0 auto
+}
+.description,.titre-form,.date-vac{
+    font-family:'Lobster',cursive;
+    font-size: 2rem;
+}
+p{
+    font-family:'Dancing Script',cursive;
+    font-size: 2rem;
+}
+label{
+    display: inline-flex;
+}
+.date{
+    border-radius:5px;
+    padding:5px;
+    width: 10%;
+}
+.valid, .cancel{
+    background-color:#0000FF;
+    border-radius: 5px;
+    border: none;
+    width: 10%;
+    padding: 1rem;
+    font-weight: bold;
+    margin: 1%;
+}
+.cancel{
+    background-color:#808080;
+}

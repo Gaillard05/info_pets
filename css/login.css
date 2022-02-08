@@ -1,0 +1,48 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+form, .form-control{
+    margin:0 auto;
+    text-align: center;
+    width: 100%;
+    text-align:center;
+}
+h2{
+    font-family:Lobster,cursive;
+    font-size:4rem;
+}
+.intitule{
+    color:#8A2BE2;
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+    margin:10px;
+}
+.form-control{
+    border-radius: 20px;
+    width: 20%;
+    margin:1rem;
+    padding:15px;
+}
+.red,.bottom{
+    color:#DC143C;
+}
+.bottom{
+    position:absolute;
+}
+.valid, .cancel{
+    background-color:#0000FF;
+    border-radius: 5px;
+    border: none;
+    width: 10%;
+    padding: 1rem;
+    font-weight: bold;
+    margin: 1%;
+}
+.cancel{
+    background-color:#808080;
+}

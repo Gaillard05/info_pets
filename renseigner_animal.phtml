@@ -1,0 +1,44 @@
+<form method="POST" action="renseigner_animal.php">
+    <h2><i class="fas fa-paw"></i>Renseigner votre animal<i class="fas fa-paw"></i></h2>
+    <p><?php if(isset($erreurs)&&$erreurs!=''){echo $erreurs;} ?></p>
+    <input type="hidden" class="form-control" name="id_user" id="id" placeholder="Entrer votre nom">
+<div class="form-group">
+    <h3 class="intitule">Espèce</h3>
+    <select name="espece" class="choix">
+            <option value="chat">chat</option>
+            <option value="chien">chien</option>
+    </select>
+</div>
+<div class="form-group">
+    <h3 class="intitule">Race</h3>
+    <legend>
+        Veuillez définir une race de chien valide : Berger Australien, Berger Belge (Malinois), Staff (Staffordshire terrier américain), Golden Retriever ou de chat: Maine Coon, Sacré de Birmanie, Bengal, Persan.
+    </legend>
+        <input type="text" class="form-control" name="race" id="race" placeholder="Entrer la race de votre animal">
+        <p><?php if(isset($msgErreurRace)&&$msgErreurRace!=''){echo $msgErreurRace;} ?></p>
+</div>
+<div class="form-group">
+    <h3 class="intitule">Age</h3>
+        <select name="choix" class="choix">
+            <option value="junior">Junior (2 à 12 mois)</option>
+            <option value="adulte">Adulte (1 à 8 ans)</option>
+            <option value="senior">Sénior (8 ans et plus)</option>
+        </select>
+</div>
+<div class="form-group">
+    <h3 class="intitule">Sexe</h3>
+        <input type="checkbox" name="sexe" value="M" class="check"></input>
+        <label for="male">Mâle</label>
+        <input type="checkbox" name="sexe" value="F" class="check"></input>
+        <label for="femelle">Femelle</label>
+</div>
+<div class="form-group">
+    <h3 class="intitule">Etat physiologique</h3>
+        <input type="checkbox" name="physio" value="E" class="check"></input>
+        <label for="entier">Entier</label>
+        <input type="checkbox" name="physio" value="S" class="check"></input>
+        <label for="sterillise">Stérillisé</label>
+</div>
+    <input type="submit" value="Valider" class="valid"></input>
+    <input type="reset" class="cancel" id="cancel"  name="cancel" value="Annuler">
+</form>

@@ -1,0 +1,57 @@
+<div id="out">
+        <div id="container">
+        <main>
+        <p class='msg'><?php if (isset( $_SESSION['nom'])&& ($_SESSION['prenom'])){echo'Bienvenu sur mon site '.'<br>'.$_SESSION['nom'].' '.$_SESSION['prenom'];}?></p>
+        <h2 class="presentation"><i class="fas fa-paw"></i>Présentation<i class="fas fa-paw"></i></h2>
+        <div class="slider">
+            <figure class="image">
+                <img class="images" src="img/accueil.jpg" />
+                <img class="images" src="img/accueil2.jpg" />
+                <img class="images" src="img/accueil3.jpg" />
+                <img class="images" src="img/accueil4.jpg" />
+            </figure>
+        </div>
+        <div id="mainDiv">
+            <section>
+            <article class="introduction">
+                <p class="txt-introduction">
+                    La réalisation de ce site est créé par une passionnée pour des passionnés.
+                    A travers votre navigation, vous découvrirez diverses informations sur les soins à apporter à votre animal,
+                    l’actualité sur les animaux de compagnie et d’autres rubriques qui pourront vous aidez en cas de besoin.
+                </p>
+                <p class="txt-introduction">
+                    Je vous souhaite une bonne visite.
+                </p>
+            </article>
+            <article class="video">
+                <video controls src="video/campagne_abandon.mp4">
+                    Votre navigateur ne peut pas lire cette vidéo
+                </video>
+            </article>
+        </section>
+        </div>
+    </main>
+        <aside>
+            <div class="menu_news">
+            <h3 class="informations"><i class="far fa-newspaper"></i><a class="lien_news" href="news.php">News</a></h3>
+                 <?php for($i=0; $i<count($table); $i++):
+                    
+                     echo $table[$i]['aside'];?>
+            <div id="openModal<?= $i; ?>" class="modalView">
+                <div><a href="#close" title="Close" class="close">X</a>
+               
+                  <?php  echo $table[$i]['modal']; ?>
+               
+                
+            </div>
+            </div>
+            <?php endfor; ?>
+        </div>
+        <div class="pub">
+                    <figure class="pub">
+                        <img src="img/pub.jpg" class="pb"/>
+                        <figcaption class="denomination">pub</figcaption>
+                    </figure>
+                </div>
+        </aside>
+        </div>  

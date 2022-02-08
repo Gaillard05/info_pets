@@ -1,0 +1,46 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+main{
+    margin: 0 auto;
+}
+h2,section{
+    text-align:center;
+}
+h2,.desc,.annuaire{
+    font-family:'Lobster',cursive;
+    font-size:4rem;
+}
+.desc,.annuaire{
+    font-size:3rem;
+}
+.img-vet{
+    max-height:45%;
+    max-width:45%;
+    display: flex;
+    margin:0 auto; 
+}
+.logo-vet{
+    display:block;
+    max-height:25%;
+    max-width:25%;
+}
+p,.explication{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+    text-align: center; 
+}
+p{
+    white-space: pre-line;
+    text-align: left;
+}
+.cartes,iframe{
+    float: right;
+    max-height: 250px;
+    max-width: 350px;
+}

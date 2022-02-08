@@ -1,0 +1,59 @@
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-size:1.4rem;
+}
+main{
+    margin: 0 auto;
+}
+h2,section{
+    text-align:center;
+}
+.img-main{
+    max-height:50%;
+    max-width:50%;
+    display:flex;
+    margin:0 auto;
+}
+h2,.desc,.liste{
+    font-family:'Lobster',cursive;
+    font-size:4rem; 
+}
+.desc,.liste{
+    font-size: 3rem;
+}
+.embleme{
+    display: block;
+    max-height: 20%;
+    max-width: 20%;
+}
+.description,p{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+    text-align: center; 
+}
+p{
+    white-space: pre-line;
+    text-align: left;
+}
+.maps,iframe{
+    float: right;
+    max-height: 250px;
+    max-width: 350px;
+}
+.aide{
+    text-align:center;
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+}
+.sous-titre{
+    font-family:'Lobster',cursive;
+    font-size:2rem;
+    margin:5px
+}
+.ligne{
+    display: inline-flex;
+}
